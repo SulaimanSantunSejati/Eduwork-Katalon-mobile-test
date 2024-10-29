@@ -19,35 +19,35 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\automate\\katalon\\Eduapp\\mobileapp\\HappyDayShopping.apk', true)
 
-WebUI.delay(20)
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/HappyShop/promo product-button'), 0)
 
-WebUI.delay(20)
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/HappyShop/LeonMensIntimateWash-100ml_product'), 0)
 
-WebUI.delay(10)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 //Mobile.tap(findTestObject('HappyShop/set-quantity-button'), 0)
 //Mobile.setText(findTestObject('Object Repository/HappyShop/quantity-set'), '5', 0)
-//WebUI.delay(10)
+//Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 //Mobile.hideKeyboard()
 Mobile.tap(findTestObject('HappyShop/Add to Bag- Button'), 0)
 
-WebUI.delay(10)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/HappyShop/YourBag-Button'), 0)
 
-WebUI.delay(10)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('HappyShop/checkout - button'), 0)
 
-WebUI.delay(30)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.getText(findTestObject('HappyShop/assert - If you have any inquiries or updates pls whatsap us at 94617563'), 0)
 
-WebUI.delay(5)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 
