@@ -17,9 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\automate\\katalon\\Eduapp\\mobileapp\\Shop Samsung_2.0.34917_APKPure.apk', true)
+Mobile.startApplication('C:\\automate\\katalon\\Eduapp\\mobileapp\\Shop Samsung_2.0.34964_APKPure.apk', false)
 
-Mobile.delay(25, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(35, FailureHandling.STOP_ON_FAILURE)
+
+// Mendapatkan lebar dan tinggi layar
+//def deviceWidth = Mobile.getDeviceWidth()  // Simpan lebar ke variabel
+//def deviceHeight = Mobile.getDeviceHeight() // Simpan tinggi ke variabel
+//
+//// Tampilkan lebar dan tinggi di konsol untuk verifikasi
+//println("Device Width: " + deviceWidth)
+//println("Device Height: " + deviceHeight)
+//
+//// Pastikan semua nilai adalah int
+//int startX = deviceWidth - 100 // Mulai swipe dari sisi kanan
+//int startY = (deviceHeight / 2).toInteger() // Tengah layar
+//int endX = 100 // Akhir swipe di sisi kiri
+//int endY = (deviceHeight / 2).toInteger() // Tengah layar
+//
+// Melakukan swipe dari kanan ke kiri
+//Mobile.swipe(startX, startY, endX, endY)
+////
+//// Melakukan swipe dari kanan ke kiri
+//Mobile.swipe(deviceWidth - 100, deviceHeight / 2, 100, deviceHeight / 2)
+
+
+
 
 Mobile.tap(findTestObject('Samsung/Shop as a guest - Button'), 800)
 
@@ -27,17 +50,23 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Samsung/Interest Phones - button'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Samsung/continue to page - button'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Samsung/Shop_Button'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Object Repository/Samsung/Phones-Products'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Samsung/Galaxy Z-product'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Samsung/Choose-Galaxy Z Fold6'), 0)
 
@@ -58,8 +87,6 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Object Repository/Samsung/Skip add-ons'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Samsung/Add to cart-button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Samsung/checkout-button'), 0)
 
