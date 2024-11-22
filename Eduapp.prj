@@ -6,10 +6,10 @@
    <UUID>99dd4845-2299-4417-9cce-780225b119ac</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>9.7.2</createdVersion>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
-   <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.7.2</modifiedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>10.0.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>C:\automate\katalon\Eduapp\Eduapp.prj</projectFileLocation>
    <sourceContent>
